@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+body {
+    background: #fff;
+    line-height: 14px;
+    font-size: 12px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    margin: 0pt;
+    cursor: default;
+    
+}
+
+html, body {
+    height: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2em;
+    border-bottom: 1px dotted #6b9ef1;
+    color: #5f95ef;
+    margin-bottom: 1em;
+}
+
+#moduleDetail div.supplier input
+{
+    width: 20px;
+
+
+}
+
+#container {
+    width: 600px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+#moduleDetail {
+    padding: 0 10px 10px;
+}
+
+#moduleDetail label {
+    display: block;
+    color: #797979;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+#moduleDetail input {
+    width: 220px;
+    padding: 6px;
+    color: #949494;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    border: 1px solid #cecece;
+}
+
+#moduleDetail input.error {
+    background: #f8dbdb;
+    border-color: #e77776;
+}
+
+#moduleDetail textarea {
+    width: 550px;
+    height: 80px;
+    padding: 6px;
+    color: #949494;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    border: 1px solid #cecece;
+}
+
+#moduleDetail textarea.error {
+    background: #f8dbdb;
+    border-color: #e77776;
+}
+
+#moduleDetail div {
+    margin-bottom: 15px;
+}
+
+#moduleDetail div span {
+    margin-left: 10px;
+    color: green;
+    font-size: 11px;
+    font-style: italic;
+}
+
+#moduleDetail div span.salary
+{
+    margin-right: 0px;
+    color:black;
+    font-size: 11px;
+    font-style: normal;
+}
+
+#moduleDetail div span.error {
+    color: #e46c6e;
+}
+
+#moduleDetail #add {
+    background: #6f9ff1;
+    color: #fff;
+    font-weight: 700;
+    font-style: normal;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#moduleDetail #add:hover {
+    background: #008b8b;
+}
+
+#error {
+    margin-bottom: 20px;
+    border: 1px solid #efefef;
+}
+
+#error ul {
+    list-style: square;
+    padding: 5px;
+    font-size: 11px;
+}
+
+#error ul li {
+    list-style-position: inside;
+    line-height: 1.6em;
+}
+
+#error ul li strong {
+    color: #e46c6d;
+}
+
+#error.valid ul li strong {
+    color: #93d72e;
+}
+
+#container table.listing_table tr td
+{
+    width: 10px;
+}
