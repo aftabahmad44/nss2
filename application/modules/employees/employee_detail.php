@@ -1,8 +1,8 @@
 <?php
 /*include_once('../application/class/SupplierDAL.php');
 include_once('class/EmployeeDAL.php');*/
-include_once($_SERVER['DOCUMENT_ROOT'].'at_t/application/class/SupplierDAL.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'at_t/application/class/EmployeeDAL.php');
+include_once(HOST_DIR.'application/class/SupplierDAL.php');
+include_once(HOST_DIR.'application/class/EmployeeDAL.php');
 
 
 $employeeDal = new EmployeeDAL();

@@ -2,7 +2,7 @@
 /*include_once('../application/class/SupplierDAL.php');
 include_once('class/SupervisorDAL.php');*/
 
-include_once($_SERVER['DOCUMENT_ROOT'].'at_t/application/class/SupervisorDAL.php');
+include_once(HOST_DIR.'application/class/SupervisorDAL.php');
 
 require_once('supervisor_detail.php');
 ?>
