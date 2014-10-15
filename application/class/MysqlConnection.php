@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'at_t/config/settings.php');
+require_once(HOST_DIR.'/config/settings.php');
 
 class MysqlConnection 
 {
