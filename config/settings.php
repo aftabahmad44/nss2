@@ -1,5 +1,5 @@
 <?php
-define('Name','aftab');
+define('Company','eTek');
 define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
 define('DB_NAME', 'atnt_db');
