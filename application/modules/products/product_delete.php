@@ -1,8 +1,8 @@
 <?php
 /*include_once('../application/class/SupplierDAL.php');
 include_once('class/EmployeeDAL.php');*/
-include_once($_SERVER['DOCUMENT_ROOT'].'at_t/application/class/SupplierDAL.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'at_t/application/class/ProductDAL.php');
+include_once(HOST_DIR.'application/class/SupplierDAL.php');
+include_once(HOST_DIR.'application/class/ProductDAL.php');
 require_once('product.php');
 $productDal = new ProductDAL();
 if(isset($_GET['id']))
