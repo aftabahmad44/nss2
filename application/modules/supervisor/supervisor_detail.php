@@ -2,7 +2,7 @@
 /*include_once('../application/class/SupplierDAL.php');
 include_once('class/SupervisorDAL.php');*/
 //include_once($_SERVER['DOCUMENT_ROOT'].'at&t/application/class/SupplierDAL.php');
-include_once($_SERVER['DOCUMENT_ROOT'].'at_t/application/class/supervisorDAL.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'nss2/application/class/supervisorDAL.php');
 
 
 $supervisorDal = new SupervisorDAL();

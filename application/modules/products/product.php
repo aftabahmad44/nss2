@@ -58,7 +58,7 @@ if(isset($_POST['add'])){
 			
 			$path = HOST_DIR. 'public/images/'.$productId.'/'. $_FILES["file"]["name"][$i];
 			
-			$db_path='/at_t/public/images/'.$productId.'/'. $_FILES["file"]["name"][$i];
+			$db_path='/nss2/public/images/'.$productId.'/'. $_FILES["file"]["name"][$i];
 			$arrimage[] = $db_path;
 			if (file_exists($path)) {
 			  
@@ -110,7 +110,7 @@ if(isset($_POST['add'])){
 			echo "Temp file: " . $_FILES["file"]["tmp_name"][$i] . "<br>";
 			
 			$path = HOST_DIR. 'public/images/'.$productId.'/'. $_FILES["file"]["name"][$i];
-			$db_path='/at_t/public/images/'.$productId.'/'. $_FILES["file"]["name"][$i];
+			$db_path='/nss2/public/images/'.$productId.'/'. $_FILES["file"]["name"][$i];
 			if (file_exists($path)) {
 			 $ProductDal->insertRelatedImages($arrimage, $productId);
 			} else {

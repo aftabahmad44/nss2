@@ -127,20 +127,19 @@ $productDal = new ProductDAL();
     {
 
         ?>
-        <tr id="<?php echo $result['product_id']?>">
+        <tr>
             <td><?php echo $result['name'];?></td>
 			<td><?php echo $result['color'];?></td>
 			<td><?php echo $result['size'];?></td>
 			<td><?php echo $result['description'];?></td>
             <td>
-			<?php $url_delete='../application/modules/products/product_delete.php?id=';?>
                 <a href="../application/modules/products/product_detail.php?product_id=<?php echo $result['product_id'];?>">View</a>
             </td>
 			<td>
                 <a href="../application/modules/products/product_view.php?id=<?php echo $result['product_id'];?>">Edit</a>
             </td>
             <td>
-               <a class="deleteRecord" onClick='deleteFunction("<?php echo $url_delete?>",<?php echo $result['product_id'];?>); return false;' href="#">Delete</a>
+                <a href="../application/modules/products/product_delete.php?id=<?php echo $result['product_id'];?>">Delete</a>
             </td>
         </tr>
         <?php
@@ -154,38 +153,5 @@ $productDal = new ProductDAL();
 </tbody>
 </table>
 </div>
-  	<link href="<?php echo CSS_DIR.'style.css'?>" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="<?php echo JS_DIR.'jquery.js'?>"></script>
-    <script type="text/javascript" src="<?php echo JS_DIR.'validation.js'?>"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-})
-function deleteFunction(url_delete,key){
-	//var uri = jQuery(this).attr("href");
-	var msg = "Do you want to delete the record?";
-	if (confirm(msg))
-	{
-			$.ajax
-		({
-			url : url_delete+key,
-			type : "POST",
-			data : {data:url_delete},
-			cache : false,
-			success : 
-					function(data)
-			{	
-				$("#"+key).remove();
-				console.log("Record deleted Successfully!");
-			},
-			error:function(){
-				console.log("Error in row deletion!");
-			}
-		});
-	}
-	else
-		return false;
-
-}
-</script>
 </body>
 </html>

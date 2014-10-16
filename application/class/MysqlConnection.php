@@ -1,5 +1,5 @@
 <?php
-require_once(HOST_DIR.'/config/settings.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'nss2/config/settings.php');
 
 class MysqlConnection 
 {

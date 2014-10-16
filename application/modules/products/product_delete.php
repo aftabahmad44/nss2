@@ -10,6 +10,6 @@ if(isset($_GET['id']))
   $productDal->deleteProduct('products','product_id',$_GET['id']);
     header("Status: 200");
 	$path = HOST_PATH."public/index.php";
-	//header("Location: $path");
+	header("Location: $path");
 }
 ?>

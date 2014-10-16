@@ -1,8 +1,8 @@
 <?php
 /*include_once('../application/class/SupplierDAL.php');
 include_once('class/EmployeeDAL.php');*/
-include_once(HOST_DIR.'application/class/SupplierDAL.php');
-include_once(HOST_DIR.'application/class/EmployeeDAL.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'nss2/application/class/SupplierDAL.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'nss2/application/class/EmployeeDAL.php');
 
 require_once('employee_detail.php');
 ?>
